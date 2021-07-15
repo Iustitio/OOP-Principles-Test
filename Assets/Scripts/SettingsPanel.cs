@@ -23,6 +23,50 @@ public class SettingsPanel : MonoBehaviour
     {
         addSizeButton.onClick.AddListener(() => target.IncreaseSize());
         minusSizeButton.onClick.AddListener(() => target.DecreaseSize());
+        
+        SetupOnEndEditListenersForInputFields();
+    }
+
+    private void SetupOnEndEditListenersForInputFields()
+    {
+        rotXInputField.onEndEdit.AddListener(text =>
+        {
+            try
+            {
+                float newRotX = float.Parse(text);
+                target.RotationSpeedX = newRotX;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        });
+        
+        rotYInputField.onEndEdit.AddListener(text =>
+        {
+            try
+            {
+                float newRotY = float.Parse(text);
+                target.RotationSpeedY = newRotY;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        });
+        
+        rotZInputField.onEndEdit.AddListener(text =>
+        {
+            try
+            {
+                float newRotZ = float.Parse(text);
+                target.RotationSpeedZ = newRotZ;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        });
     }
 
     public void UpdateUi()
