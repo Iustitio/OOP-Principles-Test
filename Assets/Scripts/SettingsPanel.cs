@@ -40,6 +40,10 @@ public class SettingsPanel : MonoBehaviour
             {
                 Console.WriteLine(e);
             }
+            finally
+            {
+                UpdateUi();
+            }
         });
         
         rotYInputField.onEndEdit.AddListener(text =>
@@ -52,6 +56,10 @@ public class SettingsPanel : MonoBehaviour
             catch (Exception e)
             {
                 Console.WriteLine(e);
+            }
+            finally
+            {
+                UpdateUi();
             }
         });
         
@@ -66,6 +74,10 @@ public class SettingsPanel : MonoBehaviour
             {
                 Console.WriteLine(e);
             }
+            finally
+            {
+                UpdateUi();
+            }
         });
     }
 
@@ -75,6 +87,6 @@ public class SettingsPanel : MonoBehaviour
         rotYInputField.text = target.RotationSpeedY.ToString(CultureInfo.InvariantCulture);
         rotZInputField.text = target.RotationSpeedZ.ToString(CultureInfo.InvariantCulture);
 
-        sizeText.text = "Current size: " + target.Scale.magnitude.ToString("0.##");
+        sizeText.text = "Current size: " + target.Scale.magnitude.ToString("0.##", CultureInfo.InvariantCulture);
     }
 }
