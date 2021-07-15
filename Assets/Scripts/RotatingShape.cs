@@ -1,0 +1,43 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RotatingShape : MonoBehaviour
+{
+    // ENCAPSULATION
+
+    public float RotationSpeedX { get; set; }
+
+    public float RotationSpeedY { get; set; }
+
+    public float RotationSpeedZ { get; set; }
+    
+    public Vector3 Scale { get; set; }
+
+    public void DoubleSize()
+    {
+        Vector3 newScale = new Vector3(Scale.x * 2, Scale.y * 2, Scale.z * 2);
+        if (HasValidSize(newScale))
+        {
+            Scale = newScale;
+        }
+    }
+
+    public void HalfSize()
+    {
+        Vector3 newScale = new Vector3(Scale.x / 2, Scale.y / 2, Scale.z / 2);
+        if (HasValidSize(newScale))
+        {
+            Scale = newScale;
+        }
+    }
+
+    protected virtual bool HasValidSize(Vector3 newScale)
+    {
+        bool isValidOnX = newScale.x < 4 && newScale.x > 0.5f;
+        bool isValidOnY = newScale.y < 4 && newScale.y > 0.5f;
+        bool isValidOnZ = newScale.z < 4 && newScale.z > 0.5f;
+
+        return isValidOnX && isValidOnY && isValidOnZ;
+    }
+}
