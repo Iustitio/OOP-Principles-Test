@@ -7,18 +7,55 @@ public class RotatingShape : MonoBehaviour
 {
     // ENCAPSULATION
 
-    public float RotationSpeedX { get; set; }
+    public float RotationSpeedX
+    {
+        get => _rotationSpeedX;
+        set
+        {
+            _rotationSpeedX = value;
+            settingsPanel.UpdateUi();
+        }
+    }
 
-    public float RotationSpeedY { get; set; }
+    public float RotationSpeedY
+    {
+        get => _rotationSpeedY;
+        set
+        {
+            _rotationSpeedY = value;
+            settingsPanel.UpdateUi();
+        }
+    }
 
-    public float RotationSpeedZ { get; set; }
-    
-    public Vector3 Scale { get; set; }
+    public float RotationSpeedZ
+    {
+        get => _rotationSpeedZ;
+        set
+        {
+            _rotationSpeedZ = value;
+            settingsPanel.UpdateUi();
+        }
+    }
+
+    public Vector3 Scale
+    {
+        get => transform.localScale;
+        set
+        {
+            transform.localScale = value;
+            settingsPanel.UpdateUi();
+        }
+    }
+
+    [SerializeField] private SettingsPanel settingsPanel;
+    private float _rotationSpeedX;
+    private float _rotationSpeedY;
+    private float _rotationSpeedZ;
 
     // ABSTRACTION
-    public void DoubleSize()
+    public void IncreaseSize()
     {
-        Vector3 newScale = new Vector3(Scale.x * 2, Scale.y * 2, Scale.z * 2);
+        Vector3 newScale = new Vector3(Scale.x * 1.1f, Scale.y * 1.1f, Scale.z * 1.1f);
         if (HasValidSize(newScale))
         {
             Scale = newScale;
@@ -26,9 +63,9 @@ public class RotatingShape : MonoBehaviour
     }
 
     // ABSTRACTION
-    public void HalfSize()
+    public void DecreaseSize()
     {
-        Vector3 newScale = new Vector3(Scale.x / 2, Scale.y / 2, Scale.z / 2);
+        Vector3 newScale = new Vector3(Scale.x * 0.9f, Scale.y * 0.9f, Scale.z * 0.9f);
         if (HasValidSize(newScale))
         {
             Scale = newScale;

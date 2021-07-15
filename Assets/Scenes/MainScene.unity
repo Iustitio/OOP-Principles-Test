@@ -1294,7 +1294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotation speed on X axis
+  m_text: Rotation speed on Z axis
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1846,6 +1846,7 @@ GameObject:
   - component: {fileID: 661660738}
   - component: {fileID: 661660737}
   - component: {fileID: 661660736}
+  - component: {fileID: 661660740}
   m_Layer: 5
   m_Name: Settings panel left
   m_TagString: Untagged
@@ -1954,6 +1955,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661660734}
   m_CullTransparentMesh: 1
+--- !u!114 &661660740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661660734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd87fd8f8ae2c45428a06ac137e08f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2112138676}
+  rotXInputField: {fileID: 1059665443}
+  rotYInputField: {fileID: 1111620561}
+  rotZInputField: {fileID: 1733297043}
+  addSizeButton: {fileID: 292121211}
+  minusSizeButton: {fileID: 1444150921}
+  sizeText: {fileID: 1655374874}
 --- !u!1 &707613936
 GameObject:
   m_ObjectHideFlags: 0
@@ -2568,7 +2588,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotation speed on X axis
+  m_text: Rotation speed on Y axis
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3818,7 +3838,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotation speed on X axis
+  m_text: Rotation speed on Y axis
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4241,6 +4261,7 @@ GameObject:
   - component: {fileID: 1526761307}
   - component: {fileID: 1526761306}
   - component: {fileID: 1526761305}
+  - component: {fileID: 1526761309}
   m_Layer: 5
   m_Name: Settings panel right
   m_TagString: Untagged
@@ -4349,6 +4370,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526761303}
   m_CullTransparentMesh: 1
+--- !u!114 &1526761309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526761303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd87fd8f8ae2c45428a06ac137e08f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1876348837}
+  rotXInputField: {fileID: 809037520}
+  rotYInputField: {fileID: 415257522}
+  rotZInputField: {fileID: 777105093}
+  addSizeButton: {fileID: 2017810247}
+  minusSizeButton: {fileID: 623876780}
+  sizeText: {fileID: 1546712036}
 --- !u!1 &1546712034
 GameObject:
   m_ObjectHideFlags: 0
@@ -4406,7 +4446,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Current scale: '
+  m_text: 'Current size: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4540,7 +4580,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotation speed on X axis
+  m_text: Rotation speed on Z axis
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5112,7 +5152,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Current scale: '
+  m_text: 'Current size: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5844,6 +5884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1f5543aec43464e8e799c933c3bb164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settingsPanel: {fileID: 1526761309}
 --- !u!1 &1929818792
 GameObject:
   m_ObjectHideFlags: 0
@@ -6785,3 +6826,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1543deb34dd8454da4572a39bee6f3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settingsPanel: {fileID: 661660740}

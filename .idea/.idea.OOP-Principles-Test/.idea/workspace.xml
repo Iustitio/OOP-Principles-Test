@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77e58867-2432-47a3-9be8-10d4da655d88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RotatingCube.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RotatingCube.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RotatingSphere.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RotatingSphere.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsPanel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsPanel.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OOP-Principles-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOP-Principles-Test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RotatingShape.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RotatingShape.cs" afterDir="false" />
@@ -34,8 +32,8 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/TitleScene.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shape.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/RotatingCube.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RotatingSphere.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RotatingCube.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RotatingShape.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SettingsPanel.cs" />
     </changedPaths>
@@ -63,10 +61,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="5412">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="5412" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -82,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626346979556</updated>
-      <workItem from="1626346985566" duration="2459000" />
+      <workItem from="1626346985566" duration="3576000" />
     </task>
     <servers />
   </component>
@@ -104,5 +102,37 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/RotatingShape.cs</url>
+          <line>57</line>
+          <properties documentPath="D:\Projects\OOP-Principles-Test\Assets\Scripts\RotatingShape.cs" initialLine="20" containingFunctionPresentation="method 'DoubleSize'">
+            <startOffsets>
+              <option value="1128" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1207" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/RotatingCube.cs</url>
+          <line>10</line>
+          <properties documentPath="D:\Projects\OOP-Principles-Test\Assets\Scripts\RotatingCube.cs" initialLine="10" containingFunctionPresentation="method 'Start'">
+            <startOffsets>
+              <option value="171" />
+            </startOffsets>
+            <endOffsets>
+              <option value="194" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
