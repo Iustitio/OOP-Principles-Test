@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,7 @@ public class RotatingShape : MonoBehaviour
     
     public Vector3 Scale { get; set; }
 
+    // ABSTRACTION
     public void DoubleSize()
     {
         Vector3 newScale = new Vector3(Scale.x * 2, Scale.y * 2, Scale.z * 2);
@@ -23,6 +25,7 @@ public class RotatingShape : MonoBehaviour
         }
     }
 
+    // ABSTRACTION
     public void HalfSize()
     {
         Vector3 newScale = new Vector3(Scale.x / 2, Scale.y / 2, Scale.z / 2);
@@ -39,5 +42,12 @@ public class RotatingShape : MonoBehaviour
         bool isValidOnZ = newScale.z < 4 && newScale.z > 0.5f;
 
         return isValidOnX && isValidOnY && isValidOnZ;
+    }
+
+    private void Update()
+    {
+        transform.Rotate(Vector3.right, RotationSpeedX * Time.deltaTime);
+        transform.Rotate(Vector3.up, RotationSpeedY * Time.deltaTime);
+        transform.Rotate(Vector3.forward, RotationSpeedZ * Time.deltaTime);
     }
 }
